@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React, { useEffect } from "react";
-import { ReactComponent as SharkSwim} from "../assets/shark_swim.svg";
+import { ReactComponent as SharkSwim} from "../../assets/shark_swim.svg";
 
 export default function SharkSwimming() {
     useEffect(() => {

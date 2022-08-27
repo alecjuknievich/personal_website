@@ -16,10 +16,35 @@
   z-index: -100;
 }
 
+.footer-div {
+  z-index: -100;
+}
+.form-div {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  gap: 3vh;
+}
+
+.form-input {
+  margin: auto;
+}
+
+ .footer {
+   z-index: -100;
+   position: relative;
+   width: 100vw;
+ }
+
+ .error {
+   color: red;
+ }
+
 .section-div {
   background: #004d5f;
   width: 100vw;
   display: flex;
+  margin-top: 5vw;
   flex-direction: row;
 }
 
@@ -39,7 +64,7 @@
   margin-left: 2vw;
   margin-right: 2vw;
   display: flex;
-  background: darkorange;
+  background: #006780;
   z-index: 10;
 }
 
@@ -52,3 +77,5 @@
   color: antiquewhite;
   padding: .5vw;
 }
+
+

@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import "../../App.css";
-import FishSwimming from "../swimming-fish";
-import SharkSwimming from "../swimming-shark";
-import WhaleSwimming from "../swimming-whale";
+import FishSwimming from "../animations/swimming-fish";
+import SharkSwimming from "../animations/swimming-shark";
+import WhaleSwimming from "../animations/swimming-whale";
 
 class Work extends Component {
     render() {
@@ -21,7 +21,7 @@ class Work extends Component {
                         business insights using industry best practices</p>
 
                         <h5>Daily tools:</h5>
-                        <p> Python | SQL | Snowflake | Linux | Docker | AWS | GitHub | Firebase | Dagster</p>
+                        <p> Python | SQL | Snowflake | Linux | Docker | AWS | GitHub | Firebase | Dagster | Github </p>
                     </div>
                 </div>
             </div>
