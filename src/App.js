@@ -14,8 +14,8 @@ function App() {
         <Nav/>
         <div className="flex-row">
             <div className="filler-div"></div>
-            <div className="info-div" style={{marginTop: 60}}>
-                <div className="text-div">
+            <div className="welcome-info-div" style={{marginTop: 60}}>
+                <div className="welcome-text-div">
                     <h1> Hello, I'm Alec</h1>
                     <p>
                         Full Stack software developer with a background in data analysis and finance

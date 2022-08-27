@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "../../App.css"
 import FishSwimming from "../animations/swimming-fish";
-import WhaleSwimming from "../animations/swimming-whale";
+import SharkSwimming from "../animations/swimming-shark";
 
 class Projects extends Component {
     render() {
@@ -29,7 +29,7 @@ class Projects extends Component {
 
                 <div className="section-div">
                     <div className="filler-div">
-                        <WhaleSwimming/>
+                        <SharkSwimming/>
                     </div>
                     <div className="info-div">
                         <div className="text-div">

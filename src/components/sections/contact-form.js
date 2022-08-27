@@ -2,6 +2,10 @@ import React, {useState} from "react";
 import axios from "axios";
 import * as _ from "lodash"
 
+import resourceConfig from "../../keys/resource_config.json";
+
+const apiUrl = resourceConfig.apiUrl;
+
 
 const ContactForm = () => {
     const [email, setEmail] = useState("");
@@ -10,20 +14,31 @@ const ContactForm = () => {
     const [message, setMessage] = useState("");
 
     const [error, setError] = useState("");
-    // const [res, setRes] = useState("")
+    const [res, setRes] = useState("")
 
     function submitForm() {
+        setRes("")
         if (email.trim() === "" && phone.trim() === "") {
             setError("Must submit either phone or email to contact.");
         } else {
-            setError("");
             let submission = { email, phone, subject, message};
             submission = _.pickBy(submission, _.identity);
             axios({
                 method: "POST",
                 data: submission,
-                url: 'http://localhost:3000/v1.0/webhooks/contact-submission'
+                url: `${apiUrl}/v1.0/webhooks/contact-submission`
             }).then((res) => {
+                if (res.status === 200) {
+                    setError("");
+                    setPhone("");
+                    setEmail("");
+                    setSubject("");
+                    setMessage("");
+                    setRes("Message successfully sent!")
+                } else {
+                    setError("Error submitting request. Please try again")
+                }
+
                 console.log(res)
             }).catch((e) => {
                 setError("Error submitting request. Please try again")
@@ -38,6 +53,7 @@ const ContactForm = () => {
             <h1 className="section-header">Contact Me</h1>
             <input
                 placeholder="Email"
+                id="email"
                 className="form-input"
                 type="text"
                 value={email}
@@ -46,6 +62,7 @@ const ContactForm = () => {
 
             <input
                 placeholder="Phone"
+                id="phone"
                 className="form-input"
                 type="text"
                 value={phone}
@@ -54,6 +71,7 @@ const ContactForm = () => {
 
             <input
                 placeholder="Subject"
+                id="subject"
                 className="form-input"
                 type="text"
                 value={subject}
@@ -65,7 +83,7 @@ const ContactForm = () => {
                 className="form-input"
                 name="message"
                 id="message"
-                cols="40"
+                cols="35"
                 rows="10"
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
@@ -78,6 +96,10 @@ const ContactForm = () => {
             </button>
             <p className="error">
                 {error}
+            </p>
+
+            <p className="success">
+                {res}
             </p>
         </div>
     )

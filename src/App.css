@@ -17,12 +17,22 @@
 }
 
 .footer-div {
-  z-index: -100;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-spacer {
+  width: 10%;
 }
 .form-div {
   flex-direction: column;
   display: flex;
   justify-content: space-around;
+  border-radius: .5vw;
+  margin-top: 3vw;
+  background: #006780;
+  width: 100%;
   gap: 3vh;
 }
 
@@ -40,6 +50,9 @@
    color: red;
  }
 
+ .success {
+   color: lawngreen;
+ }
 .section-div {
   background: #004d5f;
   width: 100vw;
@@ -68,10 +81,30 @@
   z-index: 10;
 }
 
+.welcome-info-div {
+  border-radius: .5vw;
+  width: 100vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  display: flex;
+  background: #004d5f;
+  z-index: 10;
+}
+
 .text-div {
   width: 100%;
   margin: .5vw;
   background: #006780;
+  text-align: left;
+  font-size: 2.5vw;
+  color: antiquewhite;
+  padding: .5vw;
+}
+
+.welcome-text-div {
+  width: 100%;
+  margin: .5vw;
+  background: #004d5f;
   text-align: left;
   font-size: 2.5vw;
   color: antiquewhite;
