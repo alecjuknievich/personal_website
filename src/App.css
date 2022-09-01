@@ -6,6 +6,11 @@
   width: 100vw;
 }
 
+.about-img {
+  margin-top: 5vh;
+  width: 100%;
+}
+
 .content-div {
   position: absolute;
   top: 0;
@@ -101,6 +106,10 @@
   padding: .5vw;
 }
 
+a {
+  color: antiquewhite;
+}
+
 .welcome-text-div {
   width: 100%;
   margin: .5vw;
@@ -110,5 +119,3 @@
   color: antiquewhite;
   padding: .5vw;
 }
-
-

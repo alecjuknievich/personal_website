@@ -6,7 +6,7 @@ import SharkSwimming from "../animations/swimming-shark";
 class Projects extends Component {
     render() {
         return (
-            <div>
+            <div id="Projects">
                 <h1 className="section-header">Projects</h1>
 
                 <div className="section-div">
@@ -14,7 +14,7 @@ class Projects extends Component {
                         <div className="text-div">
                             <h2>Automation Tools</h2>
                             <p>Create UI and backend to manage and execute automation tasks for: </p>
-                            <p>- Fulfilling arbitrage crypto trades</p>
+                            <p>- <a target="_blank" rel="noreferrer" href="https://github.com/alecjuknievich/cNFTBot">NFT Sniping Bot</a></p>
                             <p>- Bypassing bot security on ecommerce websites to purchase high demand items</p>
                             <p>- Everyday web tasks</p>
 
@@ -36,8 +36,8 @@ class Projects extends Component {
                             <h2>NFT Development</h2>
                             <p>Create smart contracts and web application for minting NFTs on ETH</p>
                             <p>Types of Smart Contracts:</p>
-                            <p>- NFT token mints (both on chain and off chain art)</p>
-                            <p>- Signature validation</p>
+                            <p>- <a target="_blank" rel="noreferrer" href="https://github.com/alecjuknievich/nft-smart-contracts">NFT Token Mints</a> (both on chain and off chain art)</p>
+                            <p>- <a target="_blank" rel="noreferrer" href="https://github.com/alecjuknievich/off-chain-whitelist-api">Signature Validation</a></p>
                             <p>- ERC-20 Tokens </p>
 
                             <h5>Daily tools:</h5>

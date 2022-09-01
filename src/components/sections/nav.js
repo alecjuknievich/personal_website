@@ -44,26 +44,31 @@ const SvgContainer = styled.div`
 class Nav extends Component {
     render(){
         const app = '#App'
+        const about = '#About'
+        const work = '#Work'
+        const projects = '#Projects'
+        const contact = "#Contact"
+
         return(
             <Header>
                 <Socials>
                     <NavItem href={app}>  </NavItem>
-                    <NavItem href={app}>
+                    <NavItem target="_blank" rel="noreferrer" href="https://github.com/alecjuknievich">
                         <SvgContainer>
                             <GithubLogo/>
                         </SvgContainer>
                     </NavItem>
-                    <NavItem href={app}>
+                    <NavItem target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/alec-juknievich/">
                         <SvgContainer>
                             <LinkedinLogo/>
                         </SvgContainer>
                     </NavItem>
                 </Socials>
                 <ItemContainer>
-                    <NavItem href={app}>About</NavItem>
-                    <NavItem href={app}>Work</NavItem>
-                    <NavItem href={app}>Projects</NavItem>
-                    <NavItem href={app}>Contact</NavItem>
+                    <NavItem href={about}>About</NavItem>
+                    <NavItem href={work}>Work</NavItem>
+                    <NavItem href={projects}>Projects</NavItem>
+                    <NavItem href={contact}>Contact</NavItem>
                 </ItemContainer>
             </Header>
         )

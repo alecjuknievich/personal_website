@@ -49,7 +49,7 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="form-div">
+        <div className="form-div" id="Contact">
             <h1 className="section-header">Contact Me</h1>
             <input
                 placeholder="Email"

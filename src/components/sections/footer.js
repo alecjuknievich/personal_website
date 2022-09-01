@@ -13,7 +13,6 @@ class Footer extends Component {
                     <ContactForm />
                     <div className="footer-spacer"></div>
                 </div>
-
                 <FooterSVG className="footer" />
             </div>
         )

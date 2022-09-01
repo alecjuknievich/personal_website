@@ -4,7 +4,7 @@ import "../../App.css"
 class About extends Component {
     render() {
         return(
-            <div>
+            <div id="About">
             <h1 className="section-header">About me</h1>
             <div className="section-div">
                 <div className="info-div">
@@ -21,7 +21,9 @@ class About extends Component {
                         </p>
                     </div>
                 </div>
-                <div className="filler-div"></div>
+                <div className="filler-div">
+                    <img className="about-img" src="https://ajuknievichawsbucket.s3.amazonaws.com/images/about.jpeg" alt="Alec Juknievich"/>
+                </div>
             </div>
             </div>
         )

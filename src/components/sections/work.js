@@ -7,7 +7,7 @@ import WhaleSwimming from "../animations/swimming-whale";
 class Work extends Component {
     render() {
         return(
-            <div>
+            <div id="Work">
                 <h1 className="section-header">Work Experience</h1>
             <div className="section-div">
                 <div className="filler-div">
